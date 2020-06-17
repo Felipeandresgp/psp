@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toques de queda</title>
+	<meta charset="UTF-8">
+    
+    <!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+	<!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+
+    <!--Fontawesome -->
+    <script src="https://kit.fontawesome.com/74a962be12.js"></script>
+</head>
+<body>
+	<div class="uk-container-expand">
+		<div class="uk-text-center" uk-grid>
+            <div class="uk-width-auto@m">
+                <div class="menuprimary uk-padding-small">
+        	        <ul class="uk-list">
+        	        	 <li><a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a></li>
+        	        	 <div id="offcanvas-slide" uk-dropdown>
+                             <div class="uk-nav uk-dropdown-nav">
+                                 <ul class="uk-nav-default uk-nav-parent-icon uk-text-left" uk-nav>
+                                     <li><a href="pico-y-cedula.html">Pico y cedula</a></li>
+                                     <li><a href="directorio.html">Directorio domicilios</a></li>
+                                     <li class="uk-parent">
+                                     	<a href="#">Restricciones</a>
+                                     	<ul class="uk-nav-sub">
+                                            <li><a href="#">Horario de entrada y salida</a></li>
+                                            <li class="uk-active"><a href="toque-de-queda.html">Toques de queda</a></li>
+                                        </ul>                            
+                                     </li>
+                                 </ul>
+                             </div>
+                         </div>
+                         <li><a href="index.html"><i class="fa fa-pie-chart fa-2x" aria-hidden="true"></i></a></li>
+                         <li><a href=""><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a></li>
+                         <li><a href=""><i class="fa fa-line-chart fa-2x" aria-hidden="true"></i></a></li>
+                         <li><a href=""><i class="fa fa-comments fa-2x" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-width-auto@m menusecondary uk-padding-small">
+                <div class="uk-padding-small">
+                    <span>LOGO</span>
+                </div>
+                <!-- Casos totales -->
+                <div>
+                    <div class="casostotales uk-padding-small uk-text-left">
+                    	<div uk-grid>
+                    	    <div class="uk-width-auto">
+                    	        <h2 class="uk-text-small uk-text-bold">Casos totales</h2>
+                    	    </div>
+                            <div class="uk-width-expand">
+                    	            <span>+2193</span>
+                            </div>
+                        </div>
+                        <div>
+                    	    <p class="uk-text-bolder uk-margin-remove">48.746</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Recuperados -->
+                <div class="uk-margin-top">
+                    <div class="recuperados uk-padding-small uk-text-left">
+                    	<div uk-grid>
+                    	    <div class="uk-width-auto">
+                    	        <h2 class="uk-text-small uk-text-bold">Recuperados</h2>
+                    	    </div>
+                        </div>
+                        <div>
+                    	    <p class="uk-text-bolder uk-margin-remove">19.426</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Muertes -->
+                <div class="uk-margin-top">
+                    <div class="muertes uk-padding-small uk-text-left">
+                    	<div uk-grid>
+                    	    <div class="uk-width-auto">
+                    	        <h2 class="uk-text-small uk-text-bold">Muertes</h2>
+                    	    </div>
+                            <div class="uk-width-expand">
+                    	            <span>+75</span>
+                            </div>
+                        </div>
+                        <div>
+                    	    <p class="uk-text-bolder uk-margin-remove">1.592</p>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+            <div class="uk-width-expand@m body uk-padding" uk-filter="target: .js-filter">
+                <div uk-grid>
+                	<div class="uk-width-1-2">
+                    	<div class="uk-margin">
+                            <div uk-form-custom="target: > * > span:first-child" class="uk-align-left select uk-text-bold">
+                                <select>
+                                    <option disabled>Municipio</option>
+                                    <option class="uk-active" uk-filter-control="[pico-y-cedula='cajica']"><a href="#">Cajicá</a></option>
+                                    <option uk-filter-control="[pico-y-cedula='chia']"><a href="#">Chía</a></option>
+                                    <option uk-filter-control="[pico-y-cedula='cogua']"><a href="#">Cogua</a></option>
+                                    <option uk-filter-control="[pico-y-cedula='cota']"><a href="#">Cota</a></option>
+                                    <option><a href="#">Gachancipá</a></option>
+                                    <option><a href="#">Nemocón</a></option>
+                                    <option><a href="#">Sopó</a></option>
+                                    <option><a href="#">Tabio</a></option>
+                                    <option><a href="#">Tenjo</a></option>
+                                    <option><a href="#">Tocancipá</a></option>
+                                    <option><a href="#">Zipaquirá</a></option>
+                                </select>
+                                <button class="uk-button uk-button-default" type="button" tabindex="-1">
+                                    <span></span>
+                                    <span uk-icon="icon: chevron-down"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2">
+                    	<span class="uk-align-right uk-text-bold">Actualizado: Abril 16, 2020</span>
+                    </div>
+                </div>
+                <hr class="uk-divider-icon uk-margin-remove">
+                <div class="uk-container">
+                    <ul class="js-filter" uk-grid>
+                        <li pico-y-cedula="cajica">
+                            <p>La Alcaldía Municipal de Cajicá recuerda a la comunidad que este municipio acogió la medida decretada por la Gobernación de Cundinamarca en el sentido de restringir la libre circulación de personas y vehículos en todo el departamento para prevenir la propagación del Covid-19. Por tanto, quedó prohibida la circulación de habitantes, residentes y visitantes que se encuentren en el municipio de Cajicá desde de las 00:00 horas de hoy viernes 20 de marzo, hasta las 23:59 horas del próximo lunes 23 de marzo de 2020.</p>
+                        </li>
+                        <li pico-y-cedula="chia">
+                            <div class="uk-alert-danger" uk-alert>
+                                <a class="uk-alert-close" uk-close></a>
+                                <p>Lo sentimos, aún no contamos con esta información.</p>
+                            </div>
+                        </li>
+                        <li pico-y-cedula="cogua">
+                            <div class="uk-alert-danger" uk-alert>
+                                <a class="uk-alert-close" uk-close></a>
+                                <p>Lo sentimos, aún no contamos con esta información.</p>
+                            </div>
+                        </li>
+                        <li pico-y-cedula="cota">
+                            <div class="uk-alert-danger" uk-alert>
+                                <a class="uk-alert-close" uk-close></a>
+                                <p>Lo sentimos, aún no contamos con esta información.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>      
+	</div>
+</body>
+</html>
